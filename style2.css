@@ -1,0 +1,63 @@
+body{
+    background: linear-gradient(45deg, #1A1A40, #270082, #7A0BC0, #FA58B6);
+    background-size: 300% 300%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    animation: colors 15s ease infinite;
+
+
+}
+
+figure{
+    width: 336px;
+    height: 403px;
+    position: relative;
+    background-color: #eaeaea;
+    padding: 19px 19px 85px 19px;
+
+    
+}
+figure img{
+    width: auto;
+    
+    
+}
+
+figcaption{
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: #2c2c2c;
+    margin-top: 22px;
+}
+figure:before,
+figure:after{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 180px;
+    background-color: rgba(102, 102, 102, 0.6);
+    transform: rotate(-40deg)
+}
+figure:before{
+    top: 3px;
+    left: -55px;
+}
+figure:after{
+    bottom: 3px;
+    right: -60px;
+}
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
